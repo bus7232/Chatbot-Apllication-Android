@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Chat App</title>
+</head>
+<body>
+  <div class="menu">
+    <h1>Choose Chat Mode:</h1>
+    <button id="chatbot1">Chat with Bot 1</button>
+    <button id="chatbot2">Chat with Calculator Bot</button>
+  </div>
+
+  <div class="chat-container" style="display: none;">
+    <div class="sidebar">
+      <div class="user-profile">
+        <img src="your-profile-image.jpg" alt="Profile" class="profile-picture">
+        <div class="user-details">
+          <h3 class="user-name">BASA</h3>
+          <p class="user-status">Online</p>
+        </div>
+      </div>
+
+      <div class="menu-button-container">
+        <button id="show-menu-button">Menu</button>
+      </div>
+    </div>
+
+    <div class="main">
+      <div class="chat-header">
+        <div class="contact-profile">
+          <img src="contact-profile-image.jpg" alt="Contact Profile" class="profile-picture">
+          <div class="contact-details">
+            <h3 class="contact-name">Chat Bot</h3>
+            <p class="contact-status">Online</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="chat-body">
+        <div class="message-container">
+          <!-- Messages will be added here -->
+        </div>
+      </div>
+
+      <div class="chat-footer">
+        <form class="message-form"> 
+          <input type="text" placeholder="Type a message" class="message-input">
+          <button type="submit" class="send-button">Send</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.8.0/math.js"></script>
+  <script src="scripts.js"></script>
+</body>
+</html>
